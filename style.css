@@ -1573,4 +1573,12 @@ La barre du millieu
 #secondary {
   padding-left: 8%;
 }
+
+/* local cours
+--------------------------------------------- */
+#cours-info {
+  width: 10vw;
+  height: 10vh;
+  border: 1px solid #000000;
+}
 /*# sourceMappingURL=style.css.map */
