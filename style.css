@@ -1614,6 +1614,7 @@ La barre du millieu
   align-items: center;
   width: 100%;
   margin-left: 0;
+  /* Les textes à l'intérieur des bloc*/
 }
 
 #cours #cours-info #premierText, #cours #cours-info #troisiemeText {

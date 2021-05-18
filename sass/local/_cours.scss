@@ -9,59 +9,62 @@
     margin-top: 2%;
 }
 
-#cours{
-    width : 20%;
-    display : flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3%;
-
-    font-size: clamp(2rem, #{"-0.875rem + 8.333vw"}, 4rem);
-    color: black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border: 1px solid black;
-    @include tablet{
-        width : 10vw;
-        height: 20vh;
-        
-    }
-
-    #cours-info{
-        display: flex;
+    #cours{
+        width : 20%;
+        display : flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        margin-left: 0;
+        margin: 3%;
 
-        #premierText,,#troisiemeText{
-            display: none;
+        font-size: clamp(2rem, #{"-0.875rem + 8.333vw"}, 4rem);
+        color: black;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border: 1px solid black;
+        
+        @include tablet{
+            width : 10vw;
+            height: 20vh;
             
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            font-size: 0.5rem
-             }   
-        #deuxiemeText{
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            font-size: clamp(0.6rem, #{"-0.875rem + 2.333vw"}, 1rem);
-             }
-             @include tablet{
-                #premierText,#deuxiemeText, #troisiemeText{
-                    display: flex;
-                    color: black;
-                    justify-content: center;
-                    text-align: center;
-                    align-items: center;
-                    font-size: clamp(0.9rem, #{"-0.875rem + 2.333vw"}, 1.3rem);
-                }
-             } 
+        }
         
 
-    }
+        #cours-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-left: 0;
 
-}
+            /* Les textes à l'intérieur des bloc*/
+                    #premierText,,#troisiemeText{
+                        display: none;
+                        
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        font-size: 0.5rem
+                    }   
+                    #deuxiemeText{
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        font-size: clamp(0.6rem, #{"-0.875rem + 2.333vw"}, 1rem);
+                    }
+                    @include tablet{
+                        #premierText,#deuxiemeText, #troisiemeText{
+                            display: flex;
+                            color: black;
+                            justify-content: center;
+                            text-align: center;
+                            align-items: center;
+                            font-size: clamp(0.9rem, #{"-0.875rem + 2.333vw"}, 1.3rem);
+                        }
+                    } 
+            
+
+        }
+
+    }
 
