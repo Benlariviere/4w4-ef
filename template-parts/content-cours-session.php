@@ -8,11 +8,11 @@
  */
 global $tPropriété;
 ?>
-<p>Session : <?php echo $tPropriété['session']; ?></p>
-<article id="cours-info">
- 
+<p><?php echo $tPropriété['session']; ?></p>
+<article id="cours">
+ <div id="cours-info">
 <div><?php echo $tPropriété['typeCours'];  ?></div>
 <div><?php echo $tPropriété['sigle'] ; ?></div>
 <div><?php echo $tPropriété['nbHeure'] ; ?></div>
-  
+</div>
 </article>
