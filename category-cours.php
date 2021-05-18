@@ -36,6 +36,21 @@ get_header();
                 $precedent = "XXXXXX";
  
                 get_template_part( 'template-parts/content', 'cours-session' );
+				if ($tPropriété['session'] != $precedent): 
+					if ("XXXXXX" != $precedent)	: ?>
+						</section>
+						
+						<?php endif; ?>
+					<?php endif; ?>	
+					<h2><?php echo $tPropriété['session'] ?></h2>
+					<section <?php echo class_composant($tPropriété['session']) ?>>
+				<?php endif ?>	
+
+				<?php if (in_array($tPropriété['session']) ) : 
+						get_template_part( 'template-parts/content', 'cours-carrousel' ); 
+						
+				endif;	
+				$precedent = $tPropriété['session'];
  
             endwhile;?>
  
