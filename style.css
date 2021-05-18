@@ -1616,11 +1616,29 @@ La barre du millieu
   margin-left: 0;
 }
 
-#cours #cours-info div {
-  font-size: 1.5rem;
+#cours #cours-info #premierText, #cours #cours-info #troisiemeText {
+  display: none;
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: clamp(1rem, -0.875rem + 2.333vw, 1.3rem);
+  font-size: 0.5rem;
+}
+
+#cours #cours-info #deuxiemeText {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: clamp(0.6rem, -0.875rem + 2.333vw, 1rem);
+}
+
+@media (min-width: 800px) {
+  #cours #cours-info #premierText, #cours #cours-info #deuxiemeText, #cours #cours-info #troisiemeText {
+    display: flex;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: clamp(0.9rem, -0.875rem + 2.333vw, 1.3rem);
+  }
 }
 /*# sourceMappingURL=style.css.map */

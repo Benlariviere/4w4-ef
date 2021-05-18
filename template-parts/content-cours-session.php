@@ -11,8 +11,8 @@ global $tPropriété;
 <p><?php echo $tPropriété['session']; ?></p>
 <article id="cours">
  <div id="cours-info">
-<div><?php echo $tPropriété['typeCours'];  ?></div>
-<div><?php echo $tPropriété['sigle'] ; ?></div>
-<div><?php echo $tPropriété['nbHeure'] ; ?></div>
+<div id="premierText"><?php echo $tPropriété['typeCours'];  ?></div>
+<div id="deuxiemeText"><?php echo $tPropriété['sigle'] ; ?></div>
+<div id="troisiemeText"><?php echo $tPropriété['nbHeure'] ; ?></div>
 </div>
 </article>

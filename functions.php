@@ -231,23 +231,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-function extraire_cours($query){
-	if ($query->is_category('cours'))
-	{
-		$query->set('posts_per_page', -1);
-		$query->set('orderby', 'title');
-		$query->set('order', 'asc');
-	}
 
-}
-add_action('pre_get_posts', 'extraire_cours' );
 
 function extraire_session($query){
 	if ($query->is_category('cours'))
 	{
 		$query->set('posts_per_page', -1);
-		$query->set('orderby', 'session');
-		$query->set('order', 'asc');
+		$query->set('meta_key', 'session');
+		$query->set('orderby', array( 'meta_value' => 'ASC', 'title' => 'ASC' ));
 	}
 
 }
